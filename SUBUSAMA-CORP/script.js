@@ -12,6 +12,42 @@ window.addEventListener("scroll", function () {
 
 });
 
+// ================= Mobile Menu =================
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navMenu.classList.toggle("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navMenu.classList.contains("active")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+        } else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+        }
+
+    });
+    // Close menu after clicking a link
+        navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+
+            navMenu.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+
+        });
+    });
+
+}
 // Reveal Animation
 
 const cards = document.querySelectorAll(".service-card, .partner-card");
@@ -76,30 +112,6 @@ if (scrollBtn) {
             top: 0,
             behavior: "smooth"
         });
-
-    });
-
-}
-// ================= Mobile Menu =================
-
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.querySelector("nav ul");
-
-if (menuToggle && navMenu) {
-
-    menuToggle.addEventListener("click", function () {
-
-        navMenu.classList.toggle("active");
-
-        const icon = menuToggle.querySelector("i");
-
-        if (navMenu.classList.contains("active")) {
-            icon.classList.remove("fa-bars");
-            icon.classList.add("fa-times");
-        } else {
-            icon.classList.remove("fa-times");
-            icon.classList.add("fa-bars");
-        }
 
     });
 

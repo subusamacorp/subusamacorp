@@ -1213,20 +1213,18 @@ section{
     }
 
     nav ul{
-        display:none;
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#0d6efd;
-        flex-direction:column;
-        text-align:center;
-        padding:20px 0;
-    }
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 40%;
+    height: calc(100vh - 60px);
+    background: #0b2d5c;
+    transition: 0.3s ease;
+}
 
-    nav ul.active{
-        display:flex;
-    }
+nav ul.active{
+    right: 0;
+}
 
     nav ul li{
         margin:15px 0;
