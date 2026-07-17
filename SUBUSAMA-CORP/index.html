@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBUSAMA CORP</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="logo">
+         <img src="images/logo.png" alt="SUBUSAMA CORP Logo">
+         <span>SUBUSAMA CORP</span>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+    </nav>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Your Trusted Partner in Industrial <br>
+            Electrical Solutions
+        </h1>
+
+        <p>
+            Providing high-quality industrial electrical components from leading global brands with reliable service and over a decade of industry experience.
+        </p>
+
+        <a href="#partners" class="btn">Explore Brands</a>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <div class="about-container">
+
+        <h2>About Us</h2>
+
+        <p>
+            <strong>SUBUSAMA CORP</strong> has over a decade of experience in supplying high-quality industrial electrical products from leading global brands. We are committed to delivering reliable solutions, technical expertise, and exceptional customer service to industries across India.
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- Services -->
+
+<section id="services" class="services">
+
+    <div class="section-title">
+
+        <h2>What We Offer</h2>
+
+        <p>
+            Reliable Industrial Electrical Solutions for Every Business
+        </p>
+
+    </div>
+
+    <div class="services-container">
+
+    <div class="service-card">
+    <i class="fa-solid fa-truck-fast"></i>
+    <h3>Fast Delivery</h3>
+    <p>
+        We ensure timely delivery of industrial electrical products
+        with reliable logistics and efficient service.
+    </p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-award"></i>
+    <h3>Quality Brands</h3>
+    <p>
+        We supply genuine products from globally trusted brands,
+        ensuring superior quality and long-lasting performance.
+    </p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-handshake"></i>
+    <h3>Customer Satisfaction</h3>
+    <p>
+        Building long-term customer relationships through quality
+        products, prompt support, and dependable service.
+    </p>
+</div>
+
+
+<div class="service-card">
+
+    <i class="fa-solid fa-industry"></i>
+
+    <h3>Panel Builders & Contractors</h3>
+
+    <p>
+        Supplying high-quality industrial electrical components to panel builders and contractors for reliable, safe, and efficient electrical systems.
+    </p>
+
+</div>
+
+<!-- Placeholder 2 -->
+
+<div class="service-card">
+
+    <i class="fa-solid fa-gears"></i>
+
+    <h3>OEM's</h3>
+
+    <p>
+        Supporting Original Equipment Manufacturers with genuine electrical products, ensuring consistent quality, performance, and long-term reliability.
+    </p>
+
+</div>
+
+
+<div class="service-card">
+
+    <i class="fa-solid fa-solar-panel"></i>
+
+    <h3>Renewable Energy Market</h3>
+
+    <p>
+        Providing trusted electrical solutions for renewable energy projects, supporting sustainable and efficient power generation.
+    </p>
+
+</div>
+
+</section>
+
+    <!-- Team -->
+
+    
+    <section id="partners">
+
+    <h2>Authorized Channel Partner</h2>
+
+    <div class="partner-container">
+
+        <!-- SOCOMEC -->
+        <div class="partner-card">
+                <img src="images/socomec.png" alt="Socomec"class="socomec">
+
+            <button onclick="toggleProducts('socomec')">
+                Top Products
+            </button>
+
+            <ul id="socomec" class="products">
+                <li>Onload Change Over Switch</li>
+                <li>Automatic Transfer Switch</li>
+                <li>Meters</li>
+                <li>Load Break Switch</li>
+                <li>Bypass Switch</li>
+            </ul>
+        </div>
+
+        <!-- MITSUBISHI -->
+        <div class="partner-card">
+                <img src="images/mitsubishi.png" alt="Mitsubishi"class="mitsubishi">
+
+            <button onclick="toggleProducts('mitsubishi')">
+                Top Products
+            </button>
+
+            <ul id="mitsubishi" class="products">
+                <li>Air Circuit Breakers</li>
+                <li>Moulded Case Circuit Breakers</li>
+                <li>Contactors</li>
+                <li>Overload Relay</li>
+                <li>MCB (Miniature Circuit Breakers)</li>
+                <li>RCCB</li>
+            
+            </ul>
+        </div>
+
+        <!-- MERSEN -->
+        <div class="partner-card">
+                <img src="images/mersen.png" alt="Mersen"class="mersen">
+
+            <button onclick="toggleProducts('mersen')">
+                Top Products
+            </button>
+
+            <ul id="mersen" class="products">
+                <li>Surge Protective Devices (SPD)</li>
+                <li>Fuses</li>
+                <li>Ground Monitoring Devices</li>
+            </ul>
+        </div>
+
+        <!-- BCH -->
+        <div class="partner-card">
+                <img src="images/bch.png" alt="BCH" class="bch">
+
+            <button onclick="toggleProducts('bch')">
+                Top Products
+            </button>
+
+            <ul id="bch" class="products">
+                <li>Industrial Multi Strand Cables & Wires</li>
+                <li>Plugs & Sockets</li>
+                <li>Air Circuit Breakers</li>
+                <li>Moulded Case Circuit Breakers</li>
+                <li>Motor Protection Breakers</li>
+                <li>Contactors</li>
+                <li>Overload Relay</li>
+                <li>Miniature Circuit Breakers</li>
+                <li>MCB DB</li>
+                <li>RCCB</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+      OUR CREDENTIALS
+=========================== -->
+
+<section id="credentials">
+
+    <h2>Our Credentials</h2>
+
+    <p class="credentials-subtitle">
+        Our achievements, trusted government clients, and business registrations reflect our commitment to quality, reliability, and excellence.
+    </p>
+
+    <div class="credentials-grid">
+
+        <!-- Awards -->
+
+        <div class="credential-box">
+
+            <h3><i class="fa-solid fa-award"></i> Awards & Recognition</h3>
+
+            <div class="award-item">
+                <h4>MITSUBISHI ELECTRIC</h4>
+
+                <p>
+                    All India Highest Sales FY24 – LVS Winner
+                    <strong>(Exclusive LVS Partner)</strong>
+                </p>
+            </div>
+            <div class="mitsu-trophy">
+    <i class="fa-solid fa-trophy"></i>
+</div>
+<div class="award-divider"></div>
+            <div class="award-item">
+
+                <h4>SOCOMEC</h4>
+
+                <p>
+                    ATyS Champion – South Region
+                </p>
+
+               <div class="award-years">
+
+    <div class="award-year">
+        <i class="fa-solid fa-trophy"></i>
+        <span>2022</span>
+    </div>
+
+    <div class="year-line"></div>
+
+    <div class="award-year">
+        <i class="fa-solid fa-trophy"></i>
+        <span>2023</span>
+    </div>
+
+    <div class="year-line"></div>
+
+    <div class="award-year">
+        <i class="fa-solid fa-trophy"></i>
+        <span>2024</span>
+    </div>
+
+    <div class="year-line"></div>
+
+    <div class="award-year">
+        <i class="fa-solid fa-trophy"></i>
+        <span>2025</span>
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Government Clients -->
+
+        <div class="credential-box">
+
+            <h3><i class="fa-solid fa-building-columns"></i> Government Clients</h3>
+
+            <ul class="gov-list">
+
+                <li>ISRO – Satish Dhawan Space Centre SHAR, Sriharikota</li>
+
+                <li>BHAVINI PFBR Plant Site, Kalpakkam</li>
+
+                <li>HWP, Manuguru</li>
+
+                <li>Heavy Vehicles Factory, Avadi, Thiruvallur</li>
+
+                <li>ArcelorMittal Nippon Steel India Pvt. Ltd., Hazaria</li>
+
+                <li>BHEL – High Pressure Boiler Plant, Trichy</li>
+
+                <li>Chennai Metro Rail Limited</li>
+
+                <li>IOCL, Bongaigaon</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Business Registrations -->
+
+        <div class="credential-box">
+
+            <h3><i class="fa-solid fa-file-contract"></i> Business Registrations</h3>
+
+            <div class="reg-item">
+
+                <span>GSTIN Number</span>
+
+                <strong>33ABXFS0090C1Z6</strong>
+
+            </div>
+
+            <div class="reg-item">
+
+                <span>GeM Seller ID</span>
+
+                <strong>3VTL210002060161</strong>
+
+            </div>
+
+            <div class="reg-item">
+    <span>MSME REG.</span>
+    <strong>UDYAM-TN-02-0082601</strong>
+        </div>
+    <div class="reg-item">
+    <span>IEC</span>
+    <strong>ABXFS0090C</strong>
+</div>
+        </div>
+
+    </div>
+
+</section>
+<!-- OUR TEAM -->
+
+<section id="team">
+
+    <div class="container">
+
+        <h2>Our Team</h2>
+
+        <p class="team-subtitle">
+            Where passion meets purpose
+        </p>
+
+        <div class="team-container">
+
+            <!-- Team Image 1 -->
+            <div class="team-card">
+                <img src="images/team1.jpg" alt="Office Team">
+
+                <div class="team-overlay">
+                    <p>Dedicated professionals who drive our commitment to quality, reliability, and customer satisfaction.</p>
+                </div>
+            </div>
+
+            <!-- Team Image 2 -->
+            <div class="team-card">
+                <img src="images/team2.jpg" alt="Service Team">
+
+                <div class="team-overlay">
+                    <p>Experienced professionals providing reliable installation and technical support.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <h3>SUBUSAMA CORP</h3>
+
+    <p>
+    <i class="fa-solid fa-location-dot"></i>
+    <a href="https://maps.app.goo.gl/eCA15hEBRdRXgbD37" target="_blank">
+        63, First Main Road,<br>
+        C I T Nagar,<br>
+        Chennai - 600035 <br>
+    </a>
+</p>
+    <div class="contact-item">
+    <i class="fas fa-clock"></i>
+    <span><strong>Office Hours:</strong> 9:30 AM – 6:30 PM</span>
+</div>
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:subusama@gmail.com">
+            subusama@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:04424320103">
+            044-2432 0103
+        </a>
+    </p>
+
+   <p class="contact-phone">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+
+    <a href="tel:+919444376949">+91 94443 76949</a>
+
+    <span>|</span>
+
+    <a href="tel:+918754445478">+91 87544 45478</a>
+</p>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Subusama corp | All Rights Reserved
+        </p>
+
+    </footer>
+
+<button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
